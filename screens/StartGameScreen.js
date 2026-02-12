@@ -3,7 +3,7 @@ import PrimaryButton from '../components/PrimaryButton';
 
 const StartGameScreen = () => {
   return (
-    <View style={styles.container}>
+    <View style={styles.inputContainer}>
       <TextInput />
       <PrimaryButton>Reset</PrimaryButton>
       <PrimaryButton>Confirm</PrimaryButton>
@@ -14,9 +14,17 @@ const StartGameScreen = () => {
 export default StartGameScreen;
 
 const styles = StyleSheet.create({
-  container: {
+  inputContainer: {
     // flex: 1,
-    // width: '100%',
-    backgroundColor: 'green',
+    marginTop: 100,
+    marginHorizontal: 24,
+    padding: 16,
+    backgroundColor: '#72063c',
+    borderRadius: 8,
+    elevation: 4,
+    shadowColor: 'black',
+    shadowOffset: { width: 2, height: 2 },
+    shadowRadius: 6,
+    shadowOpacity: 0.25,
   },
 });
