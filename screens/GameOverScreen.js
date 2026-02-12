@@ -1,10 +1,10 @@
-import React from 'react';
+import { Text, View } from 'react-native';
 
 const GameOverScreen = () => {
   return (
-    <div>
-      <h1>GameOverScreen</h1>
-    </div>
+    <View>
+      <Text>GameOverScreen</Text>
+    </View>
   );
 };
 

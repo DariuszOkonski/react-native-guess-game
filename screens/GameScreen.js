@@ -1,8 +1,10 @@
+import { View, Text } from 'react-native';
+
 const GameScreen = () => {
   return (
-    <div>
-      <h1>GameScreen</h1>
-    </div>
+    <View>
+      <Text>GameScreen</Text>
+    </View>
   );
 };
 
