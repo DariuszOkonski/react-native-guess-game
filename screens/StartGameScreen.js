@@ -33,7 +33,7 @@ const styles = StyleSheet.create({
     marginTop: 100,
     marginHorizontal: 24,
     padding: 16,
-    backgroundColor: '#4e0329',
+    backgroundColor: '#3b021f',
     borderRadius: 8,
     elevation: 4,
     shadowColor: 'black',
@@ -50,7 +50,6 @@ const styles = StyleSheet.create({
     color: '#ddb52f',
     marginVertical: 8,
     fontWeight: 'bold',
-    // backgroundColor: 'blue',
     textAlign: 'center',
   },
   buttonsContainer: {
