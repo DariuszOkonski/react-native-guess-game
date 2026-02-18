@@ -1,18 +1,17 @@
 import { Text, View, StyleSheet } from 'react-native';
+import Title from '../components/Title';
 
 const GameScreen = () => {
   return (
     <View style={styles.screen}>
-      <Text style={styles.title}>Opponent's Guess</Text>
+      <Title>Opponent's Guess</Title>
 
       {/* GUESS */}
-
       <View>
         <Text>Higher or lower?</Text>
 
         {/** + - */}
       </View>
-
       <View>
         <Text>LOG ROUNDS</Text>
       </View>
@@ -27,14 +26,5 @@ const styles = StyleSheet.create({
     flex: 1,
     padding: 24,
     // backgroundColor: 'green',
-  },
-  title: {
-    fontSize: 24,
-    fontWeight: 'bold',
-    color: '#ddb52f',
-    textAlign: 'center',
-    borderWidth: 2,
-    borderColor: '#ddb52f',
-    padding: 12,
   },
 });
