@@ -13,7 +13,10 @@ const GameOverScreen = () => {
         />
       </View>
 
-      <Text>Your phone needed X rounds to guess the number Y.</Text>
+      <Text style={styles.summaryText}>
+        Your phone needed <Text style={styles.highlight}>X</Text> rounds to
+        guess the number <Text style={styles.highlight}>Y</Text>.
+      </Text>
     </View>
   );
 };
@@ -39,5 +42,14 @@ const styles = StyleSheet.create({
   image: {
     width: '100%',
     height: '100%',
+  },
+  summaryText: {
+    fontFamily: 'open-sans',
+    fontSize: 24,
+    textAlign: 'center',
+  },
+  highlight: {
+    fontFamily: 'open-sans-bold',
+    color: Colors.primary500,
   },
 });
