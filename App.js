@@ -3,13 +3,17 @@ import { View, Text, StyleSheet, Button, TextInput } from 'react-native';
 
 export default function App() {
   const [enteredGoalText, setEnteredGoalText] = useState('');
+  const [courseGoals, setCourseGoals] = useState([]);
 
   function goalInputHandler(enteredText) {
     setEnteredGoalText(enteredText);
   }
 
   function addGoalHandler() {
-    console.log(enteredGoalText);
+    setCourseGoals((currentCourseGoal) => [
+      ...currentCourseGoal,
+      enteredGoalText,
+    ]);
   }
 
   return (
