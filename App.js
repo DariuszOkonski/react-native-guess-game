@@ -28,7 +28,9 @@ export default function App() {
       </View>
 
       <View style={styles.goalsContainer}>
-        <Text>List of goals...</Text>
+        {courseGoals.map((goal, idx) => (
+          <Text key={idx}>{goal}</Text>
+        ))}
       </View>
     </View>
   );
