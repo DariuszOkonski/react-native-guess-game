@@ -1,12 +1,15 @@
+import { useState } from 'react';
 import { View, Text, StyleSheet, Button, TextInput } from 'react-native';
 
 export default function App() {
+  const [enteredGoalText, setEnteredGoalText] = useState('');
+
   function goalInputHandler(enteredText) {
-    console.log('onchangetext: ', enteredText);
+    setEnteredGoalText(enteredText);
   }
 
   function addGoalHandler() {
-    console.log('onpress');
+    console.log(enteredGoalText);
   }
 
   return (
